@@ -19,10 +19,20 @@ Material intro screen is inspired by [Material Intro] and developed with love fr
 
 ## Usage
 ### Step 1:
+
+####Add it in your root build.gradle at the end of repositories:
+
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://www.jitpack.io' }
+		}
+	}
+
 #### Add gradle dependecy
 ```
 dependencies {
-  compile 'agency.tango.android:material-intro-screen:{latest_release}'
+  implementation 'com.github.Aqil92:AwesomeIntroScreen:1.0'
 }
 ```
 ### Step 2:
@@ -114,47 +124,7 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 ```
 
 All features which are not available in simple Slide Fragment are shown here: [Custom Slide]
-
-## Things I have used to create this
- - For parallax I have used files from [Material Intro] by [@HeinrichReimer]
- - [InkPageIndicator.java] by [@NickButcher]
- - Images used to create sample app are from [freepik]
- - For over scroll effect on last slide I have partially used [Android-Overscroll-ViewPager]
  
-## Getting Help
-
-To report a specific problem or feature request, [open a new issue on Github](https://github.com/TangoAgency/material-intro-screen/issues/new).
-
-## Company
- 
-[![Facebook](https://github.com/TangoAgency/material-intro-screen/blob/master/images/facebook.png)](https://www.facebook.com/TangoDigitalAgency)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![Twitter](https://github.com/TangoAgency/material-intro-screen/blob/master/images/twitter.png)](https://twitter.com/Tango_Agency)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![LinkedIn](https://github.com/TangoAgency/material-intro-screen/blob/master/images/linkedin.png)](https://www.linkedin.com/company/tango-digital-agency)
-
-[Here](https://github.com/TangoAgency/) you can see open source work developed by Tango Agency.
- 
-Whether you're searching for a new partner or trusted team for creating your new great product we are always ready to start work with you. 
-
-You can contact us via contact@tango.agency.
+You can contact us via aqil.mohd.92@gmail.com.
 Thanks in advance.
  
-[Custom Slide]: <https://github.com/TangoAgency/material-intro-screen/blob/master/app/src/main/java/agency/tango/materialintro/CustomSlide.java>
-[Material Intro]: <https://github.com/HeinrichReimer/material-intro/tree/master/library/src/main/java/com/heinrichreimersoftware/materialintro/view/parallax>
-[@HeinrichReimer]: <https://github.com/HeinrichReimer>
-[InkPageIndicator.java]: <https://github.com/nickbutcher/plaid/blob/master/app/src/main/java/io/plaidapp/ui/widget/InkPageIndicator.java>
-[@NickButcher]: <https://github.com/nickbutcher>
-[freepik]: <http://www.freepik.com/>
-[Simple slide]: <https://github.com/TangoAgency/material-intro-screen/blob/master/images/simple_slide.gif>
-[Customslide]: <https://github.com/TangoAgency/material-intro-screen/blob/master/images/custom_slide.gif>
-[Permission slide]: <https://github.com/TangoAgency/material-intro-screen/blob/master/images/permissions_slide.gif>
-[Finish slide]: <https://github.com/TangoAgency/material-intro-screen/blob/master/images/finish_slide.gif>
-[Intro Activity]: <https://github.com/TangoAgency/material-intro-screen/blob/master/app/src/main/java/agency/tango/materialintro/IntroActivity.java>
-[Parallax Slide]: <https://github.com/TangoAgency/material-intro-screen/blob/master/app/src/main/res/layout/fragment_custom_slide.xml>
-[PermissionSlide]: <https://github.com/TangoAgency/material-intro-screen/blob/master/app/src/main/java/agency/tango/materialintro/IntroActivity.java#L52>
-[FinishSlide]: <https://github.com/TangoAgency/material-intro-screen/blob/master/app/src/main/java/agency/tango/materialintro/IntroActivity.java#L19>
-[SimpleSlide]: <https://github.com/TangoAgency/material-intro-screen/blob/master/app/src/main/java/agency/tango/materialintro/IntroActivity.java#L43>
-[ParallaxFrame]: <https://github.com/TangoAgency/material-intro-screen/blob/master/material-intro-screen/src/main/java/agency/tango/materialintroscreen/parallax/ParallaxFrameLayout.java>
-[ParallaxLinear]: <https://github.com/TangoAgency/material-intro-screen/blob/master/material-intro-screen/src/main/java/agency/tango/materialintroscreen/parallax/ParallaxLinearLayout.java>
-[ParallaxRelative]: <https://github.com/TangoAgency/material-intro-screen/blob/master/material-intro-screen/src/main/java/agency/tango/materialintroscreen/parallax/ParallaxRelativeLayout.java>
-[ParallaxFactor]: <https://github.com/TangoAgency/material-intro-screen/blob/master/material-intro-screen/src/main/res/layout/fragment_slide.xml#L29>
-[Manifest]: <https://github.com/TangoAgency/material-intro-screen/blob/master/app/src/main/AndroidManifest.xml#L28>
-[TranslationWrapper]: <https://github.com/TangoAgency/material-intro-screen/blob/master/material-intro-screen/src/main/java/agency/tango/materialintroscreen/animations/ViewTranslationWrapper.java>
-[Android-Overscroll-ViewPager]: <https://github.com/iamjiex/Android-Overscroll-ViewPager>
